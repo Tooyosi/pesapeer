@@ -1,0 +1,62 @@
+#landing{
+    #top{
+        background-color: $secondary;
+        min-height: 90vh;
+        background-image: url('../../images/backgrounds/Hero-map.gif');
+        background-size: 100%;
+        .countrys-div{
+            background: linear-gradient(91.77deg, #21355D 3.31%, #4A5D77 83.91%);
+            opacity: 0.9;
+            border: 1px solid #435A76;
+            box-sizing: border-box;
+            /* Elevation 1 */
+            box-shadow: 0px 10px 30px rgba(16, 34, 68, 0.2);
+            border-radius: 20px;
+        }
+        .currency-input{
+            background: #1D2A41;
+            border-radius: 10px;
+            input{
+                background: transparent;
+                border: none;
+                outline: none;
+                box-shadow: none;
+                color: $body-light;
+                width: 100%;
+                padding: 10px;
+            }
+            .flag-input{
+                button{
+                    border: none;
+                    color: $body-light;
+                    &::after{
+                    border-top: 5px solid $body-light;
+                    }
+                }
+                .ReactFlagsSelect-module_selectOptions__3LNBJ{
+                    color: black !important;
+                }
+            }
+        }
+    }
+    #features{
+        background-color: $artboard;
+       
+    }
+    #borderless{
+        background-color: $secondary;
+    }
+
+    .icon-div{
+        background: #FFFFFF;
+        box-shadow: 0px 10px 30px rgba(16, 34, 68, 0.2);
+        border-radius: 100px;
+
+        padding: 4px 10px 10px;
+        height: max-content;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

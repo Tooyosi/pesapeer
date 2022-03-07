@@ -1,0 +1,10 @@
+@import "./variables/app";
+@import "./variables";
+@import "./mixins";
+@import "./custom";
+
+@import "./pages/landing";
+@import "./components/footer";
+
+// 3rd party
+@import 'bootstrap/scss/bootstrap';

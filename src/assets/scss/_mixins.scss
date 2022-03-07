@@ -1,0 +1,20 @@
+@mixin view-height($height) {
+  .vh-#{$height} {
+    min-height: #{$height}vh;
+  }
+}
+
+
+@include view-height(10);
+@include view-height(20);
+@include view-height(30);
+@include view-height(40);
+@include view-height(50);
+@include view-height(60);
+@include view-height(60);
+@include view-height(70);
+@include view-height(80);
+@include view-height(90);
+@include view-height(100);
+
+
