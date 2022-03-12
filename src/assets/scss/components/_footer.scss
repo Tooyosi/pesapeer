@@ -1,0 +1,35 @@
+#footer{
+    .get-started{
+        background-image: url('../../images/backgrounds/bg_footer_get_started.svg');
+        background-color: $secondary;
+        color: $white;
+        border-radius: 40px;
+        // background-size: contain;
+        background-size: 350px 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+        min-height: 250px;
+        .img-div{
+            // position: absolute;
+            .image{
+                position: absolute;
+                bottom: 0;
+                // left: 0;
+                @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
+                    position: initial;
+                }
+            }
+        }
+    }
+    .negative-margin{
+        margin-top: -130px;
+        .container{
+            padding-top: 200px;
+        }
+    }
+
+    .footer-links{
+        list-style: none;
+        padding: 0;
+    }
+}

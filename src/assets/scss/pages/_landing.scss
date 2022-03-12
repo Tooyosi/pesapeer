@@ -1,9 +1,20 @@
 #landing{
+    .navbar{
+        background-color: $secondary !important;
+            .nav-link{
+                color: white !important
+            }
+            .nav-item{
+                a{
+                    color: white !important
+                }
+            }
+        }
     #top{
         background-color: $secondary;
         min-height: 90vh;
         background-image: url('../../images/backgrounds/Hero-map.gif');
-        background-size: 100%;
+        background-size: 100% 100%;
         .countrys-div{
             background: linear-gradient(91.77deg, #21355D 3.31%, #4A5D77 83.91%);
             opacity: 0.9;
@@ -45,8 +56,9 @@
     }
     #borderless{
         background-color: $secondary;
+        background-image: url('../../images/backgrounds/bg_borderless.gif');
+        background-size: cover;
     }
-
     .icon-div{
         background: #FFFFFF;
         box-shadow: 0px 10px 30px rgba(16, 34, 68, 0.2);
@@ -57,6 +69,105 @@
         img{
             width: 20px;
             height: 20px;
+        }
+    }
+    #trusted{
+        .cards{
+            padding: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            border-radius: 40px;
+            width: 100%;
+            height: 500px;
+            max-width: 500PX;
+            margin: auto;
+            
+        }
+        .simplest-card{
+            background-color: $artboard;
+            background-image: url('../../images/backgrounds/bg_simplest.svg');
+        }
+        .fees-card{
+            background-image: url('../../images/backgrounds/bg_fees.svg');
+            background-color: #E0EFD7;
+        }
+
+        .trust-card{
+            background-image: url('../../images/backgrounds/bg_trust.svg');
+            background-color: #FFEBED;
+        }
+
+        .earn-card{
+            background-image: url('../../images/backgrounds/bg_earn.svg');
+            background-color: $artboard;
+        }
+    }
+    #get-started{
+        hr{
+            width: 150px;
+            height: 1px;
+            position: absolute;
+            bottom: 76%;
+            left: 75%;
+            // width: 200px;
+            // height: 3px;
+        }
+    }
+}
+
+#ghana-landing{
+    .navbar{
+        background-color: $artboard !important;
+        .nav-link{
+            color: black !important
+        }
+        .nav-item{
+            a{
+                color: black !important
+            }
+        }
+    }
+    .top{
+        .first{
+            background-color: $artboard;
+            // background-image: url('../../images/backgrounds/bg_ghana_top.svg');
+            background-repeat: no-repeat;
+            background-position: right;
+            .fitst-col{
+                padding-left: 100px;
+                padding-right: 100px;
+                height: min-content;
+                align-self: center;
+                @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    
+                }
+            }
+            .top-img{
+                position: relative; 
+                height: 116%; 
+                @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
+                    position: initial; 
+                    height: 100%; 
+                }
+            }
+        }
+        .second{
+            .negative-top{
+                margin-top: -130px;
+                @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
+                    margin-top: 0px;
+                }
+            }   
+            .negative-left{
+                position: relative;
+                right: 30%;
+                @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
+                    position: initial;
+                }
+            }
         }
     }
 }

@@ -1,15 +1,37 @@
-import Header from "components/common/Header";
-import BorderlessComponent from "./Components/BorderlessComponent";
-import FeaturesComponent from "./Components/FeaturesComponent";
-import { TopComponent } from "./Components/TopComponent";
+import React, { useCallback, useEffect, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
+import DefaultLanding from './Countries/Default'
+import GhanaLanding from './Countries/Ghana'
 
-export default function Landing() {
+
+const MapSubComponents: React.FC<{ countryCode: string }> = ({ countryCode, ...props }) => {
+    let componnents: Record<string, any> = {
+        default: <DefaultLanding  {...props} />,
+        gh: <GhanaLanding  {...props} />,
+    }
+
+    return componnents[countryCode]
+}
+
+
+const Landing = () => {
+    const [searchParams] = useSearchParams();
+    const [countryCode, setCountryCode] = useState('default')
+    const getDefaultCountry = useCallback(() => {
+        let countryCode = searchParams.get('country')
+        console.log({ countryCode })
+        if (countryCode) {
+            setCountryCode(countryCode)
+        }
+    }, [setCountryCode, searchParams])
+
+    useEffect(() => {
+        getDefaultCountry()
+    }, [getDefaultCountry])
+
     return (
-        <div id="landing">
-            <Header />
-            <TopComponent />
-            <FeaturesComponent />
-            <BorderlessComponent />
-        </div>
+        <MapSubComponents countryCode={countryCode} />
     )
 }
+
+export default Landing

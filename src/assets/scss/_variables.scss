@@ -1,14 +1,19 @@
 $white: #fff;
 $black: #000;
+$primary:#1E5AE8;
 $body-light:#9098B1;
 $pesa-menu: #8BA2C2;
 $secondary: #142844;
 $artboard: #EFF7FF;
+$dark-blue: #0F1A2A;
 $all-transition: all 0.5s ease;
 
 // CUSTOM THEME
 $theme-colors: (
     "secondary": $secondary,
     "pesa-menu": $pesa-menu,
-    "artboard": $artboard
+    "artboard": $artboard,
+    "dark-blue": $dark-blue,
+    "body-light": $body-light,
+    "primary": $primary
 );
