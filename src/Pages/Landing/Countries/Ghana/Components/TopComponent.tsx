@@ -1,21 +1,9 @@
-import { onChange } from 'Helpers/utility'
-import React, { useState } from 'react'
+import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
-import AppStoreComponent from './AppStoreComponent'
-import { CurrencyInput } from './CurrencyInput'
+import AppStoreComponent from '../../Default/Components/AppStoreComponent'
 
 export const TopComponent = () => {
-    const [state, setState] = useState({
-        formConvert: {
-            sendAmount: 0,
-            receiveAmount: 0
-        }
-    })
-
-
-    const handleChange = (e: HTMLFormElement) => {
-        onChange(e, setState)
-    }
+   
     return (
         <div className='top'>
             <div className="first">

@@ -1,6 +1,11 @@
 #landing{
     .navbar{
         background-color: $secondary !important;
+            .dropdown-menu{
+                a{
+                    color: $black !important;
+                }
+            }
             .nav-link{
                 color: white !important
             }
@@ -59,18 +64,7 @@
         background-image: url('../../images/backgrounds/bg_borderless.gif');
         background-size: cover;
     }
-    .icon-div{
-        background: #FFFFFF;
-        box-shadow: 0px 10px 30px rgba(16, 34, 68, 0.2);
-        border-radius: 100px;
 
-        padding: 4px 10px 10px;
-        height: max-content;
-        img{
-            width: 20px;
-            height: 20px;
-        }
-    }
     #trusted{
         .cards{
             padding: 50px;
@@ -169,5 +163,152 @@
                 }
             }
         }
+    }
+
+  
+}
+
+#calculate-component{
+    .exchange-card{
+        border: 1px solid #EBF0FF;
+        box-sizing: border-box;
+        box-shadow: 30px 20px 30px rgba(16, 34, 68, 0.05);
+        border-radius: 20px;
+        .currency-div{
+            background: #F6F6F6;
+            border-radius: 10px;
+            .currency-input{
+                padding-bottom: 5px;
+                input{
+                    background: transparent;
+                    border-right: 1px solid #C9CDD4;
+                    border-top: none;
+                    border-bottom: none;
+                    border-left : none;
+                    outline: none;
+                    box-shadow: none;
+                    color: $body-light;
+                    width: 100%;
+                    padding: 10px;
+                }
+                .flag-input{
+                    button{
+                        border: none;
+                        color: $body-light;
+                        &::after{
+                        border-top: 5px solid $body-light;
+                        }
+                    }
+                    .ReactFlagsSelect-module_selectOptions__3LNBJ{
+                        color: black !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#connections{
+    &.uk-connections{
+        background-image: url('../../images/svg/pages/Landing/uk-connection-man.svg') !important;
+        @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
+            background-image: none;
+              
+          }
+    }
+    background-color: $primary;
+    background-image: url('../../images/svg/pages/Landing/gh-connection-man.svg');
+    background-position: right;
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
+      background-image: none;
+        
+    }
+    .relative-image{
+        position: relative;
+        left: 100%;
+    }
+}
+
+.icon-div{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(16, 34, 68, 0.2);
+    border-radius: 100px;
+
+    padding: 4px 10px 10px;
+    height: max-content;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+#sending-component{
+    min-height: 90vh;
+    background-image:linear-gradient(270.18deg, rgba(30, 90, 232, 0) 32.78%, #37425A 93.82%), url('../../images/backgrounds/bg-sending-money.jpg');
+    background-size: cover;
+}
+
+#kenya-landing{
+    .navbar{
+        // background-color: $secondary !important;
+            .dropdown-menu{
+                a{
+                    color: $black !important;
+                }
+            }
+            .nav-link{
+                color: white !important
+            }
+            .nav-item{
+                a{
+                    color: white !important
+                }
+            }
+    }
+    .top{
+        background-color: transparent;
+        background-image: url('../../images/backgrounds/bg-kenya.jpg');
+        background-size: cover;
+    } 
+}
+
+#uganda-landing{
+    .navbar{
+        // background-color: $secondary !important;
+            .dropdown-menu{
+                a{
+                    color: $black !important;
+                }
+            }
+            .nav-link{
+                color: white !important
+            }
+            .nav-item{
+                a{
+                    color: white !important
+                }
+            }
+    }
+    .top{
+        background-color: transparent;
+        background-image: url('../../images/backgrounds/bg-uganda.jpg');
+        background-size: cover;
+    }
+
+    #connections{
+        background-image: url('../../images/backgrounds/ug-connection-man.jpg') !important;
+        background-size: 50%;
+        @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
+            background-image: none  !important;   
+          }
+    }
+}
+
+#eu-landing{
+    #sending-component{
+        background-image:linear-gradient(270.18deg, rgba(30, 90, 232, 0) 32.78%, #37425A 93.82%), url('../../images/backgrounds/eu-bg-sending-money.png');
     }
 }

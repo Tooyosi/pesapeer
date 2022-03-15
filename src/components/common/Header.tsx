@@ -9,9 +9,7 @@ import {
     DropdownToggle,
     DropdownMenu,
     Container,
-    DropdownItem,
-    Row,
-    Col
+    DropdownItem
 } from 'reactstrap';
 import Logo from './Logo';
 import { Link } from "react-router-dom"
@@ -33,14 +31,14 @@ const Header = ({ toggler, logoType, ...props }: any) => {
     return (
         <Navbar id='header' color='transparent' expand="md" className='pt-3'>
             <Container>
-                <Link className="nav-brand" to="/">
+                <a className="nav-brand" href="/">
                     <Logo logoType={logoType} style={{ height: "50px", maxWidth: '180px' }} className="img-fluid" />
-                </Link>
+                </a>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto mt-md-0 mt-3" navbar>
                         <Dropdown
-                            nav
+                            // nav
                             inNavbar
                             isOpen={isDropdown}
                             // onMouseEnter={() => toggleDropdown(true)}
@@ -66,7 +64,7 @@ const Header = ({ toggler, logoType, ...props }: any) => {
                                             {
                                                 name: 'Kenya',
                                                 flag: '',
-                                                code: 'ka'
+                                                code: 'ke'
                                             },
                                             {
                                                 name: 'Uganda',
@@ -83,8 +81,13 @@ const Header = ({ toggler, logoType, ...props }: any) => {
                                                 flag: '',
                                                 code: 'phil'
                                             },
+                                            // {
+                                            //     name: 'Us',
+                                            //     flag: '',
+                                            //     code: 'us'
+                                            // },
                                             {
-                                                name: 'Us',
+                                                name: 'UK',
                                                 flag: '',
                                                 code: 'us'
                                             }
@@ -101,7 +104,7 @@ const Header = ({ toggler, logoType, ...props }: any) => {
                                         {[
 
                                             {
-                                                name: 'Malaysia',
+                                                name: 'EU',
                                                 flag: '',
                                                 code: 'mal'
                                             }, {
