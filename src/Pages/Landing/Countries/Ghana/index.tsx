@@ -5,6 +5,7 @@ import {TopComponent} from "./Components/TopComponent";
 import CalculateComponent from "./Components/CalculateComponent";
 import ConnectionsComponent from "./Components/ConnectionsComponent";
 import SafeComponent from './Components/SafeComponent';
+import EasiestComponent from './Components/EasiestComponent';
 
 const GhanaLanding:React.FC<any> = () => {
     return (
@@ -12,6 +13,7 @@ const GhanaLanding:React.FC<any> = () => {
             <Header logoType="blue"/>
             <TopComponent />
             <CalculateComponent />
+            <EasiestComponent />
             <ConnectionsComponent />
             <SafeComponent />
             <Footer />

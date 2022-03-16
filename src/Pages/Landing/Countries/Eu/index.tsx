@@ -11,8 +11,10 @@ import TopComponent from './Components/TopComponent'
 const EuComponent: React.FC<any> = () => {
     return (
         <div id="eu-landing">
-            <Header logoType="blue" />
-            <TopComponent />
+            <div className="top">
+                <Header />
+                <TopComponent />
+            </div>
             <EasiestComponent />
             <CalculateComponent />
             <SendingComponent />

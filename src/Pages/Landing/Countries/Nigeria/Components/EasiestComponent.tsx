@@ -6,8 +6,8 @@ const EasiestComponent = () => {
     <div>
         <Container>
             <Row>
-                <Col md="6">
-                <img src={require('assets/images/Pages/Landing/ng-easiest-man.jpg')} height="50" className="img-fluid" alt="" />
+                <Col md="6" className='mt-0 mt-md-n4'>
+                <img src={require('assets/images/Pages/Landing/ng-easiest-man.png')} height="50" className="img-fluid mt-0 mt-md-n5" alt="" />
 
                 </Col>
                 <Col md="6" className='align-self-center'>

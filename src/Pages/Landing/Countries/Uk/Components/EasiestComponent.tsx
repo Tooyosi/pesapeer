@@ -7,7 +7,7 @@ const EasiestComponent = () => {
         <Container>
             <Row>
                 <Col md="6">
-                <img src={require('assets/images/Pages/Landing/uk-easiest-man.jpg')} height="50" className="img-fluid" alt="" />
+                <img src={require('assets/images/Pages/Landing/uk-easiest-man.jpg')} height="50" className="img-fluid absolute-image" alt="" />
 
                 </Col>
                 <Col md="6" className='align-self-center'>
